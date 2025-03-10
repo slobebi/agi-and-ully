@@ -55,9 +55,10 @@ const isOpened = ref(false)
 
 <style scoped>
 .ully {
-  background:
+  background-image:
     radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
     url('~/assets/img/DSCF9878.JPG');
   background-size: cover;
+  background-position: center center;
 }
 </style>
