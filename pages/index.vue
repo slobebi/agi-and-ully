@@ -12,6 +12,7 @@
       nth-child="keempat" title="Mempelai Pria" />
     <SaveOurDate class="snap-center snap-always" />
     <CountDown class="snap-center snap-always" />
+    <RSVP class="snap-center snap-always" />
   </div>
 </template>
 
