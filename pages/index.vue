@@ -1,10 +1,12 @@
 <script setup lang="ts">
+const router = useRoute()
+const guestName = router.query.to?.toString()
 
 </script>
 
 <template>
   <div class="snap-y snap-mandatory overflow-y-scroll h-screen max-w-md mx-auto">
-    <Cover class="snap-center snap-always" />
+    <Cover :guest-name="guestName" class="snap-center snap-always" />
     <QS class="snap-center snap-always" />
     <BrideGroom class="snap-center snap-always" father="Ayah Ully" mother="Ibu Ully" name="Faizatul Ulya Gunawan"
       nth-child="kedua" title="Mempelai Wanita" />
