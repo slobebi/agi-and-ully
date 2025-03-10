@@ -16,7 +16,7 @@ const isOpened = ref(false)
 
 <template>
   <div class="w-full h-screen bg-black text-white ully p-10">
-    <div ref="target" class="flex flex-col justify-between items-center h-full pt-16 pb-5 animated-text"
+    <div ref="target" class="flex flex-col justify-between items-center h-full pt-16 pb-20 animated-text"
       :class="{ 'animate': isInViewport }">
       <div class="flex flex-col justify-start items-center gap-[10px]">
         <div class="font-light">

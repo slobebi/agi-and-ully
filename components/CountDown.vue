@@ -67,19 +67,19 @@ onBeforeUnmount(() => {
         HITUNG MUNDUR
       </div>
       <div class="flex gap-4 justify-center p-4 font-sans">
-        <div class="text-center p-4 min-w-[80px]">
+        <div class="text-center p-2">
           <div class="text-4xl font-bold">{{ padZero(timeLeft.days) }}</div>
           <div class="text-sm uppercase mt-2">Hari</div>
         </div>
-        <div class="text-center p-4 min-w-[80px]">
+        <div class="text-center p-2">
           <div class="text-4xl font-bold">{{ padZero(timeLeft.hours) }}</div>
           <div class="text-sm uppercase mt-2">Jam</div>
         </div>
-        <div class="text-center p-4 min-w-[80px]">
+        <div class="text-center p-2">
           <div class="text-4xl font-bold">{{ padZero(timeLeft.minutes) }}</div>
           <div class="text-sm uppercase mt-2">Menit</div>
         </div>
-        <div class="text-center p-4 min-w-[80px]">
+        <div class="text-center p-2">
           <div class="text-4xl font-bold">{{ padZero(timeLeft.seconds) }}</div>
           <div class="text-sm uppercase mt-2">Detik</div>
         </div>
