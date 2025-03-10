@@ -1,7 +1,5 @@
 <script setup lang="ts">
-const route = useRoute()
 
-const secretGalleryActive = route.query['secret'] && route.query['secret'] == import.meta.env.VITE_SECRET_GALLERY_KEY
 </script>
 
 <template>
@@ -15,7 +13,6 @@ const secretGalleryActive = route.query['secret'] && route.query['secret'] == im
     <SaveOurDate class="snap-center snap-always" />
     <CountDown class="snap-center snap-always" />
     <RSVP class="snap-center snap-always" />
-    <Gallery v-if="secretGalleryActive" class="snap-center snap-always" />
   </div>
 </template>
 
