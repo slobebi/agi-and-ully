@@ -24,5 +24,5 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/supabase'],
+  modules: ['@nuxtjs/supabase', '@vueuse/nuxt'],
 })
