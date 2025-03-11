@@ -9,8 +9,15 @@ onMounted(() => {
 defineProps<{
   guestName: string | undefined
 }>()
+const emit = defineEmits<{
+  (e: 'open'): void
+}>()
 
 const isOpened = ref(false)
+const handleOpen = () => {
+  isOpened.value = true
+  emit('open')
+}
 
 </script>
 
@@ -39,7 +46,7 @@ const isOpened = ref(false)
         <div class="font-light text-xs text-center mb-5">
           Mohon maaf apabila terdapat kesalahan dalam penulisan nama dan gelar
         </div>
-        <button @click="isOpened = true"
+        <button @click="handleOpen"
           class="uppercase text-sm bg-[#2f3330] hover:bg-white hover:text-black transition-all duration-1000 px-3 py-2">
           Lihat Undangan
         </button>

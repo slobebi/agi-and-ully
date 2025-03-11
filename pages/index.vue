@@ -1,12 +1,13 @@
 <script setup lang="ts">
 const router = useRoute()
 const guestName = router.query.to?.toString()
-
+const isAbleScroll = ref(false)
 </script>
 
 <template>
-  <div class="snap-y snap-mandatory overflow-y-scroll h-screen min-md:max-w-md max-md:w-full mx-auto overscroll-x-none">
-    <Cover :guest-name="guestName" class="snap-center snap-always" />
+  <div class="snap-y snap-mandatory h-screen min-md:max-w-md max-md:w-full mx-auto overscroll-x-none"
+    :class="[isAbleScroll ? 'overflow-y-scroll' : 'overflow-hidden']">
+    <Cover :guest-name="guestName" @open="isAbleScroll = true" class="snap-center snap-always" />
     <QS class="snap-center snap-always" />
     <BrideGroom class="snap-center snap-always" father="Ayah Ully" mother="Ibu Ully" name="Faizatul Ulya Gunawan"
       nth-child="kedua" title="Mempelai Wanita" />

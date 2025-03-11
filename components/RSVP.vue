@@ -45,7 +45,12 @@ const timeAgo = (val: string) => {
 }
 
 const isOpenWish = ref(false)
-const setIsOpenWish = (value: boolean) => {
+const setIsOpenWish = async (value: boolean) => {
+  if (value) {
+    const { data } = await client.from('rsvp').select('*').order('created_at', { ascending: false })
+    rsvps.value = data
+  }
+
   isOpenWish.value = value
 }
 
