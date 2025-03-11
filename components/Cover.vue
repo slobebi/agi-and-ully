@@ -29,21 +29,21 @@ const handleOpen = () => {
         <div class="font-light uppercase font-aperto text-lg">
           The wedding of
         </div>
-        <div class="font-bold text-5xl font-velista">
+        <div class="font-bold text-3xl font-velista">
           ULLY & ALGHI
         </div>
         <div class="font-light font-aperto text-lg">
-          SATURDAY, 5 APRIL 2025
+          SATURDAY, APRIL 5th 2025
         </div>
       </div>
       <div v-if="!isOpened" class="flex flex-col justify-center items-center gap-3">
-        <div class="font-light font-vogue">
+        <div class="font-light font-sm font-vogue">
           To,
         </div>
-        <div v-if="guestName" class="font-bold text-4xl font-vogue">
+        <div v-if="guestName" class="font-bold text-3xl font-vogue">
           {{ guestName }}
         </div>
-        <div class="font-light text-base text-center mb-5 font-vogue">
+        <div class="font-light text-sm text-center mb-5 font-vogue">
           We sincerely apologize if there are any errors in the writing of names or titles.
         </div>
         <button @click="handleOpen"

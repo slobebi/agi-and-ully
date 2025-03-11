@@ -16,13 +16,13 @@ const mapLink = 'https://maps.app.goo.gl/LfotKX4BjJeKCmjb6'
       <div class="font-aperto text-lg">
         Save Our Date
       </div>
-      <div class="font-bold text-4xl font-vogue">
+      <div class="font-bold text-3xl font-vogue">
         Saturday <br> 5 April 2025
       </div>
-      <div class="font-semibold text-xl font-vogue">
+      <div class="font-semibold text-base font-vogue">
         Akad <br> 07.00 AM - 09.00 AM
       </div>
-      <div class="font-semibold text-xl font-vogue">
+      <div class="font-semibold text-base font-vogue">
         Wedding Reception <br> 11.00 AM - 16.00 PM
       </div>
       <div class="font-light text-sm font-vogue">

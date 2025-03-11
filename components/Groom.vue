@@ -17,7 +17,7 @@ onMounted(() => {
       <div class="font-bold text-4xl uppercase mb-4 text-end font-vogue">
         Abdul Aziz Alghifari
       </div>
-      <div class="font-light text-4xl mb-2 text-end font-photograph tracking-wider">
+      <div class="font-light text-4xl mb-2 text-end font-photograph tracking-wide">
         The fourth child of
       </div>
       <div class="font-light mb-1 text-end font-vogue">
