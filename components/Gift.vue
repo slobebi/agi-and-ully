@@ -12,7 +12,7 @@ const { text, copy, copied, isSupported } = useClipboard({ source })
 </script>
 <template>
   <div class="w-full h-screen bg-black text-white cover">
-    <div ref="target" class="flex flex-col justify-end items-start h-full p-10 pb-20 animated-text"
+    <div ref="target" class="flex flex-col justify-end items-start h-full p-10 pb-40 animated-text"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl uppercase mb-4">
         Love Gift

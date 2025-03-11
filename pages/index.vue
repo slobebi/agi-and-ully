@@ -8,15 +8,15 @@ const isAbleScroll = ref(false)
   <div class="snap-y snap-mandatory h-screen min-md:max-w-md max-md:w-full mx-auto overscroll-x-none"
     :class="[isAbleScroll ? 'overflow-y-scroll' : 'overflow-hidden']">
     <Cover :guest-name="guestName" @open="isAbleScroll = true" class="snap-center snap-always" />
-    <QS class="snap-center snap-always" />
-    <Bride class="snap-center snap-always" />
-    <Groom class="snap-center snap-always" />
+    <QS class="snap-start snap-always" />
+    <Bride class="snap-end snap-always" />
+    <Groom class="snap-end snap-always" />
     <SaveOurDate class="snap-center snap-always" />
     <CountDown class="snap-center snap-always" />
     <AttireGuide class="snap-center snap-always" />
     <RSVP class="snap-center snap-always" />
-    <Gift class="snap-center snap-always" />
-    <ThankYou class="snap-center snap-always" />
+    <Gift class="snap-end snap-always" />
+    <ThankYou class="snap-end snap-always" />
   </div>
 </template>
 
