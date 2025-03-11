@@ -22,7 +22,7 @@ onMounted(() => {
       <div class="font-bold text-xl uppercase mb-4">
         Ully & Alghi
       </div>
-      <div class="font-light text-[8px] uppercase mb-10">
+      <div class="font-light text-[8px] uppercase mb-20">
         Created by Abdul Aziz Alghifari
       </div>
     </div>
