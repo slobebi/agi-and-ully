@@ -13,8 +13,10 @@ const isAbleScroll = ref(false)
     <Groom class="snap-center snap-always" />
     <SaveOurDate class="snap-center snap-always" />
     <CountDown class="snap-center snap-always" />
-    <RSVP class="snap-center snap-always" />
     <AttireGuide class="snap-center snap-always" />
+    <RSVP class="snap-center snap-always" />
+    <Gift class="snap-center snap-always" />
+    <ThankYou class="snap-center snap-always" />
   </div>
 </template>
 

@@ -14,10 +14,10 @@ onMounted(() => {
       <div class="font-light uppercase mb-4">
         Groom
       </div>
-      <div class="font-bold text-4xl uppercase mb-2">
+      <div class="font-bold text-4xl uppercase mb-4">
         Abdul Aziz Alghifari
       </div>
-      <div class="font-light uppercase mb-4">
+      <div class="font-light uppercase mb-2">
         The fourth child of
       </div>
       <div class="font-light uppercase mb-1">

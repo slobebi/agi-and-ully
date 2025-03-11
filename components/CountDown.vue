@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { FileDownloadOptions } from '~/types/download';
+
 const targetElement = useTemplateRef<HTMLDivElement>('target');
 const { isInViewport, observeElement } = useInViewport();
 
@@ -58,13 +60,28 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (timer.value) clearInterval(timer.value);
 });
+
+const downloadFile = (options: FileDownloadOptions) => {
+  try {
+    const link = document.createElement('a');
+    link.href = options.path;
+    link.download = options.name || options.path.split('/').pop() || 'file';
+    link.style.display = 'none';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch (error) {
+    console.error('Download failed:', error);
+  }
+};
 </script>
 <template>
   <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-end items-center h-full pb-44 animated-text gap-8"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl">
-        HITUNG MUNDUR
+        COUNT DOWN
       </div>
       <div class="flex gap-4 justify-center p-4 font-sans">
         <div class="text-center p-2">
@@ -84,6 +101,13 @@ onBeforeUnmount(() => {
           <div class="text-sm uppercase mt-2">Detik</div>
         </div>
       </div>
+      <button
+        @click="downloadFile({ path: '/files/event-to-save-in-my-calendar.ics', name: 'the-wedding-of-ully-and-agi' })"
+        class="flex items-center justify-center gap-2 uppercase bg-[#2f3330] hover:bg-white hover:text-black text-sm transition-all px-4 py-2">save
+        the date
+        <span>
+          <img src="~/assets/icon/chevron_right.svg" class="" alt="">
+        </span></button>
     </div>
   </div>
 </template>

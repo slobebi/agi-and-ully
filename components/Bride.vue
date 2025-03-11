@@ -14,11 +14,11 @@ onMounted(() => {
       <div class="font-light uppercase mb-4">
         Bride
       </div>
-      <div class="font-bold text-4xl uppercase mb-2">
+      <div class="font-bold text-4xl uppercase mb-4">
         Faizatul Ulya Gunawan
       </div>
-      <div class="font-light uppercase mb-4">
-        The second child of
+      <div class="font-light uppercase mb-2">
+        The third child of
       </div>
       <div class="font-light uppercase mb-1">
         IR. Gunawan
