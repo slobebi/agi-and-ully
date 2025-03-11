@@ -15,11 +15,11 @@ const { text, copy, copied, isSupported } = useClipboard({ source })
     <div ref="target" class="flex flex-col justify-end items-start h-full p-10 pb-20 animated-text"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl uppercase mb-4">
-        Tanda Kasih
+        Love Gift
       </div>
       <div class="font-light mb-8 text-sm">
-        Doa restu yang kami terima sangat berarti, namun jika memberi merupakan tanda kasih, tentunya semakin melengkapi
-        kebahagiaan kami.
+        Your blessings and prayers mean a great deal to us. However, if you wish to express your kindness through a
+        gift, it would certainly add to our joy and happiness.
       </div>
       <div class="flex justify-between items-center w-full">
         <div class="font-light text-sm">

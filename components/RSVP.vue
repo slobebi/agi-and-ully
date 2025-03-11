@@ -121,11 +121,11 @@ const submitForm = async () => {
     <div ref="target" class="flex flex-col justify-start items-start p-5 animated-text gap-4 bg-white"
       :class="{ 'animate': isInViewport }">
       <div class="font-semibold uppercase">
-        RSVP - UCAPAN & DOA
+        RSVP - Prayers & blessings
       </div>
       <div class="font-light text-sm">
-        Mohon doa & restu dari Bapak/Ibu/Saudara/i untuk kelancaran acara kami, serta konfirmasi kehadiran menggunakan
-        fitur di bawah ini,
+        We kindly request your prayers and blessings for the smooth running of our event. Please also confirm your
+        attendance using the feature provided below,
       </div>
       <div class="w-full text-sm">
         <label for="name" class="block mb-1">Nama</label>

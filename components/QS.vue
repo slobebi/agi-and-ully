@@ -19,9 +19,8 @@ onMounted(() => {
       </div>
 
       <div class="font-light text-sm">
-        Artinya: “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu
-        sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
-        sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”
+        "And one of His signs is that He created for you spouses from among yourselves so that you may find comfort in
+        them. And He has placed between you compassion and mercy. Surely in this are signs for people who reflect."
       </div>
       <div class="font-bold text-2xl">
         Ully & Alghi

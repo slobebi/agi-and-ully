@@ -13,11 +13,10 @@ onMounted(() => {
       :class="{ 'animate': isInViewport }">
       <img src="~/assets/img/LOGO_white-02.svg" class="w-20 h-20 mb-50" alt="">
       <div class="font-bold text-4xl uppercase mb-4">
-        Terima Kasih
+        Thank You
       </div>
       <div class="font-light mb-8 text-sm">
-        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan
-        doa restu kepada kami.
+        It is an honor and a joy for us if you would kindly attend and bestow your blessings upon us.
       </div>
       <div class="font-bold text-xl uppercase mb-4">
         Ully & Alghi
