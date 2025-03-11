@@ -18,7 +18,7 @@ onMounted(() => {
       <div class="font-light mb-8 text-sm font-vogue">
         It is an honor and a joy for us if you would kindly attend and bestow your blessings upon us.
       </div>
-      <div class="font-bold text-3xl mb-4 font-photograph">
+      <div class="font-bold text-3xl mb-4 font-signature">
         Ully & Alghi
       </div>
       <div class="font-light text-[9px] uppercase mb-20 font-vogue">

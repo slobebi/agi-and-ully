@@ -22,7 +22,7 @@ onMounted(() => {
         "And one of His signs is that He created for you spouses from among yourselves so that you may find comfort in
         them. And He has placed between you compassion and mercy. Surely in this are signs for people who reflect."
       </div>
-      <div class="font-bold text-4xl font-hightspirit">
+      <div class="font-bold text-4xl font-signature">
         Ully & Alghi
       </div>
     </div>
