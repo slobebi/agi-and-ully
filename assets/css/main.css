@@ -31,11 +31,17 @@
   src: url("../fonts/PhotographSignature.ttf")
 }
 
+@font-face {
+  font-family: 'holimount';
+  src: url("../fonts/Holimount.otf")
+}
+
 @theme {
   --font-aperto: "aperto";
   --font-vogue: "vogue";
   --font-velista: "velista";
   --font-hightspirit: "highspirit";
   --font-photograph: "photograph";
-  --font-signature: "signature"
+  --font-signature: "signature";
+  --font-holimount: "holimount";
 }

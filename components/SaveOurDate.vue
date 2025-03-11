@@ -16,8 +16,8 @@ const mapLink = 'https://maps.app.goo.gl/LfotKX4BjJeKCmjb6'
       <div class="font-aperto text-lg">
         Save Our Date
       </div>
-      <div class="font-bold text-3xl font-vogue">
-        Saturday <br> 5 April 2025
+      <div class="font-bold text-2xl font-vogue uppercase">
+        Saturday <br> April 5th 2025
       </div>
       <div class="font-semibold text-base font-vogue">
         Akad <br> 07.00 AM - 09.00 AM
