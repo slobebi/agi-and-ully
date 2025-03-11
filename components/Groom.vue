@@ -12,7 +12,7 @@ onMounted(() => {
     <div ref="target" class="flex flex-col justify-end items-start h-full p-10 pb-20 animated-text"
       :class="{ 'animate': isInViewport }">
       <div class="font-light uppercase mb-4">
-        Groom
+        The Groom
       </div>
       <div class="font-bold text-4xl uppercase mb-4">
         Abdul Aziz Alghifari
