@@ -117,7 +117,7 @@ const submitForm = async () => {
 
 </script>
 <template>
-  <div class="w-full h-screen bg-black text-black py-20 px-10">
+  <div class="w-full h-screen bg-black text-black py-20 px-10 cover">
     <div ref="target" class="flex flex-col justify-start items-start p-5 animated-text gap-4 bg-white"
       :class="{ 'animate': isInViewport }">
       <div class="font-semibold uppercase">
@@ -214,3 +214,24 @@ const submitForm = async () => {
     </TransitionRoot>
   </div>
 </template>
+
+<style scoped>
+.cover {
+  background-image:
+    radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
+    url('~/assets/img/halaman_rsvp.JPG');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 1s ease-in;
+}
+
+.animated-text.animate {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+</style>

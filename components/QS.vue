@@ -7,7 +7,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="w-full h-screen bg-black text-white">
+  <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-start items-start h-full p-10 pt-20 animated-text gap-5"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl">
@@ -18,14 +18,24 @@ onMounted(() => {
         مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
       </div>
 
-      <div class="font-light">
+      <div class="font-light text-sm">
         Artinya: “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu
         sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan
         sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”
       </div>
-      <div class="font-bold text-4xl">
+      <div class="font-bold text-2xl">
         Ully & Alghi
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.cover {
+  background-image:
+    radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
+    url('~/assets/img/halaman_2.JPG');
+  background-size: cover;
+  background-position: center center;
+}
+</style>

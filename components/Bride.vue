@@ -1,0 +1,41 @@
+<script setup lang="ts">
+const targetElement = useTemplateRef<HTMLDivElement>('target');
+const { isInViewport, observeElement } = useInViewport();
+
+onMounted(() => {
+  if (targetElement.value) observeElement(targetElement.value);
+});
+
+</script>
+<template>
+  <div class="w-full h-screen bg-black text-white cover">
+    <div ref="target" class="flex flex-col justify-end items-start h-full p-10 pb-20 animated-text"
+      :class="{ 'animate': isInViewport }">
+      <div class="font-light uppercase mb-4">
+        Bride
+      </div>
+      <div class="font-bold text-4xl uppercase mb-2">
+        Faizatul Ulya Gunawan
+      </div>
+      <div class="font-light uppercase mb-4">
+        The second child of
+      </div>
+      <div class="font-light uppercase mb-1">
+        IR. Gunawan
+      </div>
+      <div class="font-light uppercase">
+        Yeni Rasyid, S.Tr.Keb
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.cover {
+  background-image:
+    radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
+    url('~/assets/img/halaman_bride.JPG');
+  background-size: cover;
+  background-position: center center;
+}
+</style>

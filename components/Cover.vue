@@ -22,7 +22,7 @@ const handleOpen = () => {
 </script>
 
 <template>
-  <div class="w-full h-screen bg-black text-white ully p-10">
+  <div class="w-full h-screen bg-black text-white cover p-10">
     <div ref="target" class="flex flex-col justify-between items-center h-full pt-16 pb-20 animated-text"
       :class="{ 'animate': isInViewport }">
       <div class="flex flex-col justify-start items-center gap-[10px]">
@@ -61,10 +61,10 @@ const handleOpen = () => {
 </template>
 
 <style scoped>
-.ully {
+.cover {
   background-image:
     radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
-    url('~/assets/img/DSCF9878.JPG');
+    url('~/assets/img/DSCF98782.JPG');
   background-size: cover;
   background-position: center center;
 }

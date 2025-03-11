@@ -60,7 +60,7 @@ onBeforeUnmount(() => {
 });
 </script>
 <template>
-  <div class="w-full h-screen bg-black text-white">
+  <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-end items-center h-full pb-44 animated-text gap-8"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl">
@@ -87,3 +87,13 @@ onBeforeUnmount(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.cover {
+  background-image:
+    radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
+    url('~/assets/img/halaman_hitung_mundur.JPG');
+  background-size: cover;
+  background-position: center bottom;
+}
+</style>
