@@ -80,10 +80,10 @@ const downloadFile = (options: FileDownloadOptions) => {
   <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-end items-center h-full pb-44 animated-text gap-8"
       :class="{ 'animate': isInViewport }">
-      <div class="font-bold text-4xl">
+      <div class="font-bold text-4xl font-aperto">
         COUNT DOWN
       </div>
-      <div class="flex gap-4 justify-center p-4 font-sans">
+      <div class="flex gap-4 justify-center p-4 font-vogue">
         <div class="text-center p-2">
           <div class="text-4xl font-bold">{{ padZero(timeLeft.days) }}</div>
           <div class="text-sm uppercase mt-2">Hari</div>

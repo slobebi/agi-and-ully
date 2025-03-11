@@ -23,27 +23,27 @@ const handleOpen = () => {
 
 <template>
   <div class="w-full h-screen bg-black text-white cover p-10">
-    <div ref="target" class="flex flex-col justify-between items-center h-full pt-16 pb-20 animated-text"
+    <div ref="target" class="flex flex-col justify-between items-center h-full pt-16 pb-20 animated-text text-base"
       :class="{ 'animate': isInViewport }">
       <div class="flex flex-col justify-start items-center gap-[10px]">
-        <div class="font-light uppercase">
+        <div class="font-light uppercase font-aperto text-lg">
           The wedding of
         </div>
-        <div class="font-bold text-4xl">
+        <div class="font-bold text-5xl font-velista">
           ULLY & ALGHI
         </div>
-        <div class="font-light">
+        <div class="font-light font-aperto text-lg">
           SATURDAY, 5 APRIL 2025
         </div>
       </div>
       <div v-if="!isOpened" class="flex flex-col justify-center items-center gap-3">
-        <div class="font-light">
+        <div class="font-light font-vogue">
           To,
         </div>
-        <div v-if="guestName" class="font-bold text-4xl">
+        <div v-if="guestName" class="font-bold text-4xl font-vogue">
           {{ guestName }}
         </div>
-        <div class="font-light text-xs text-center mb-5">
+        <div class="font-light text-base text-center mb-5 font-vogue">
           We sincerely apologize if there are any errors in the writing of names or titles.
         </div>
         <button @click="handleOpen"

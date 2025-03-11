@@ -10,22 +10,22 @@ const mapLink = 'https://maps.app.goo.gl/LfotKX4BjJeKCmjb6'
 <template>
   <div class="w-full h-screen bg-black text-white cover">
     <div ref="target"
-      class="flex flex-col justify-center items-center h-full px-10 pt-20 animated-text gap-6 text-center"
+      class="flex flex-col justify-center items-center h-full px-10 py-20 animated-text gap-6 text-center text-base"
       :class="{ 'animate': isInViewport }">
       <img src="~/assets/img/LOGO_white-02.svg" class="w-20 h-20" alt="">
-      <div class="font-light">
+      <div class="font-aperto text-lg">
         Save Our Date
       </div>
-      <div class="font-bold text-4xl">
+      <div class="font-bold text-4xl font-vogue">
         Saturday <br> 5 April 2025
       </div>
-      <div class="font-semibold text-xl">
+      <div class="font-semibold text-xl font-vogue">
         Akad <br> 07.00 AM - 09.00 AM
       </div>
-      <div class="font-semibold text-xl">
+      <div class="font-semibold text-xl font-vogue">
         Wedding Reception <br> 11.00 AM - 16.00 PM
       </div>
-      <div class="font-light">
+      <div class="font-light text-sm font-vogue">
         Henni Adli Minangkabau Handycraft Village <br> Jl. Raya Air Dingin, Balai Gadang, Kec. Koto Tangah, Kota Padang,
         Sumatera Barat 25177
       </div>

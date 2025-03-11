@@ -12,16 +12,16 @@ onMounted(() => {
     <div ref="target" class="flex flex-col justify-end items-center h-full p-10 animated-text text-center"
       :class="{ 'animate': isInViewport }">
       <img src="~/assets/img/LOGO_white-02.svg" class="w-20 h-20 mb-50" alt="">
-      <div class="font-bold text-4xl uppercase mb-4">
+      <div class="font-bold text-4xl uppercase mb-4 font-aperto">
         Thank You
       </div>
-      <div class="font-light mb-8 text-sm">
+      <div class="font-light mb-8 text-sm font-vogue">
         It is an honor and a joy for us if you would kindly attend and bestow your blessings upon us.
       </div>
-      <div class="font-bold text-xl uppercase mb-4">
+      <div class="font-bold text-3xl mb-4 font-photograph">
         Ully & Alghi
       </div>
-      <div class="font-light text-[8px] uppercase mb-20">
+      <div class="font-light text-[9px] uppercase mb-20 font-vogue">
         Created by Abdul Aziz Alghifari
       </div>
     </div>

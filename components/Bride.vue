@@ -11,20 +11,20 @@ onMounted(() => {
   <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-end items-end h-full p-10 pb-20 animated-text"
       :class="{ 'animate': isInViewport }">
-      <div class="font-light uppercase mb-4 text-end">
+      <div class="font-light uppercase mb-4 text-end font-aperto text-lg">
         The Bride
       </div>
-      <div class="font-bold text-4xl uppercase mb-4 text-end">
+      <div class="font-bold text-4xl uppercase mb-4 text-end font-vogue">
         Faizatul Ulya Gunawan
       </div>
-      <div class="font-light uppercase mb-2 text-end">
+      <div class="font-light text-4xl mb-2 text-end font-photograph tracking-widest">
         The third child of
       </div>
-      <div class="font-light uppercase mb-1 text-end">
-        IR. Gunawan
+      <div class="font-light mb-1 text-end font-vogue">
+        Mr. Ir. Gunawan
       </div>
-      <div class="font-light uppercase text-end">
-        Yeni Rasyid, S.Tr.Keb
+      <div class="font-light text-end font-vogue">
+        and Mrs. Yeni Rasyid, S.Tr.Keb
       </div>
     </div>
   </div>

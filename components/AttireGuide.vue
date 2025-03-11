@@ -11,10 +11,10 @@ onMounted(() => {
     <div ref="target"
       class="flex flex-col justify-center items-center h-full px-10 pt-20 animated-text gap-6 text-center"
       :class="{ 'animate': isInViewport }">
-      <div class="font-semibold uppercase text-3xl">
+      <div class="font-semibold uppercase text-4xl font-aperto">
         a guide to dress code
       </div>
-      <div class="font-light">
+      <div class="font-light font-vogue text-base">
         We kindly encourage our guest to wear these colors for our special day
       </div>
       <div class="flex gap-2 justify-center items-center">

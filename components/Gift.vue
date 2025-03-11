@@ -14,14 +14,14 @@ const { text, copy, copied, isSupported } = useClipboard({ source })
   <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-end items-start h-full p-10 pb-40 animated-text"
       :class="{ 'animate': isInViewport }">
-      <div class="font-bold text-4xl uppercase mb-4">
+      <div class="font-bold text-4xl uppercase mb-4 font-aperto">
         Love Gift
       </div>
-      <div class="font-light mb-8 text-sm">
+      <div class="font-light mb-8 text-sm font-vogue">
         Your blessings and prayers mean a great deal to us. However, if you wish to express your kindness through a
         gift, it would certainly add to our joy and happiness.
       </div>
-      <div class="flex justify-between items-center w-full">
+      <div class="flex justify-between items-center w-full font-vogue">
         <div class="font-light text-sm">
           Mandiri <br>
           1110011200504 <br>

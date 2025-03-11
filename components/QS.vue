@@ -8,9 +8,9 @@ onMounted(() => {
 </script>
 <template>
   <div class="w-full h-screen bg-black text-white cover">
-    <div ref="target" class="flex flex-col justify-start items-start h-full p-10 pt-20 animated-text gap-5"
+    <div ref="target" class="flex flex-col justify-start items-start h-full p-10 pt-20 animated-text gap-5 text-base"
       :class="{ 'animate': isInViewport }">
-      <div class="font-bold text-4xl">
+      <div class="font-bold text-4xl font-aperto">
         QS. AR-RUM: 21
       </div>
       <div class="font-light">
@@ -18,11 +18,11 @@ onMounted(() => {
         مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
       </div>
 
-      <div class="font-light text-sm">
+      <div class="font-light text-sm font-vogue">
         "And one of His signs is that He created for you spouses from among yourselves so that you may find comfort in
         them. And He has placed between you compassion and mercy. Surely in this are signs for people who reflect."
       </div>
-      <div class="font-bold text-2xl">
+      <div class="font-bold text-4xl font-hightspirit">
         Ully & Alghi
       </div>
     </div>

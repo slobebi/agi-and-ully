@@ -1,2 +1,35 @@
 
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'aperto';
+  src: url("../fonts/Aperto SCOsF Regular.otf")
+}
+
+@font-face {
+  font-family: 'vogue';
+  src: url("../fonts/Classyvogueregular.ttf")
+}
+
+@font-face {
+  font-family: 'velista';
+  src: url("../fonts/VELISTA.woff")
+}
+
+@font-face {
+  font-family: 'highspirit';
+  src: url("../fonts/High Spirited.ttf")
+}
+
+@font-face {
+  font-family: 'photograph';
+  src: url("../fonts/Photograph Signature.ttf")
+}
+
+@theme {
+  --font-aperto: "aperto";
+  --font-vogue: "vogue";
+  --font-velista: "velista";
+  --font-hightspirit: "highspirit";
+  --font-photograph: "photograph";
+}

@@ -120,20 +120,20 @@ const submitForm = async () => {
   <div class="w-full h-screen bg-black text-black py-20 px-10 cover">
     <div ref="target" class="flex flex-col justify-start items-start p-5 animated-text gap-4 bg-white"
       :class="{ 'animate': isInViewport }">
-      <div class="font-semibold uppercase">
+      <div class="font-semibold text-xl uppercase font-aperto">
         RSVP - Prayers & blessings
       </div>
-      <div class="font-light text-sm">
+      <div class="font-light text-sm font-vogue">
         We kindly request your prayers and blessings for the smooth running of our event. Please also confirm your
         attendance using the feature provided below,
       </div>
-      <div class="w-full text-sm">
+      <div class="w-full text-sm font-vogue">
         <label for="name" class="block mb-1">Nama</label>
         <div v-if="errorForm['name']" class="text-red-700">{{ errorForm['name'] }}</div>
         <input @input="clearErrorAsInput('name')" v-model="rsvpForm.name" id="name" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2" />
       </div>
-      <div class="w-full text-sm">
+      <div class="w-full text-sm font-vogue">
         <label for="attendance" class="block mb-1">Kehadiran</label>
         <div v-if="errorForm['attendance']" class="text-red-700">{{ errorForm['attendance'] }}</div>
         <select @change="clearErrorAsInput('attendance')" v-model="rsvpForm.attendance" id="attendance" type="text"
@@ -143,7 +143,7 @@ const submitForm = async () => {
           <option :value="1">Tidak Hadir</option>
         </select>
       </div>
-      <div class="w-full text-sm">
+      <div class="w-full text-sm font-vogue">
         <label for="guestCount" class="block mb-1">Jumlah Tamu</label>
         <div v-if="errorForm['guestCount']" class="text-red-700">{{ errorForm['guestCount'] }}</div>
         <select @change="clearErrorAsInput('guestCount')" v-model="rsvpForm.guestCount" id="guestCount" type="text"
@@ -153,7 +153,7 @@ const submitForm = async () => {
           <option :value="2">2</option>
         </select>
       </div>
-      <div class="w-full text-sm">
+      <div class="w-full text-sm font-vogue">
         <label for="wish" class="block mb-1">Ucapan</label>
         <div v-if="errorForm['wish']" class="text-red-700">{{ errorForm['wish'] }}</div>
         <textarea @input="clearErrorAsInput('wish')" v-model="rsvpForm.wish" id="wish" type="text"
@@ -182,13 +182,13 @@ const submitForm = async () => {
               <DialogPanel
                 class="w-full max-w-sm transform max-h-[80vh] overflow-y-scroll relative bg-white px-6 text-left align-middle shadow-xl transition-all">
                 <div class="sticky top-0 bg-white">
-                  <DialogTitle as="h3" class=" text-lg font-medium leading-6 text-gray-900 py-4 ">
+                  <DialogTitle as="h3" class=" text-lg font-medium leading-6 text-gray-900 py-4 font-aperto">
                     Wishes
                   </DialogTitle>
                   <hr class="h-0.5 border-t-0 bg-black" />
                 </div>
 
-                <div class="mt-2">
+                <div class="mt-2 font-vogue">
                   <template v-for="(rsvp, index) in rsvps" :key="index">
                     <div class="flex gap-1 justify-start items-center mb-2">
                       <div class="text-sm text-black">{{ rsvp.name }}</div>

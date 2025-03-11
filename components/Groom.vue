@@ -11,20 +11,20 @@ onMounted(() => {
   <div class="w-full h-screen bg-black text-white cover">
     <div ref="target" class="flex flex-col justify-end items-end h-full p-10 pb-20 animated-text"
       :class="{ 'animate': isInViewport }">
-      <div class="font-light uppercase mb-4 text-end">
+      <div class="font-light uppercase mb-4 text-end font-aperto text-lg">
         The Groom
       </div>
-      <div class="font-bold text-4xl uppercase mb-4 text-end">
+      <div class="font-bold text-4xl uppercase mb-4 text-end font-vogue">
         Abdul Aziz Alghifari
       </div>
-      <div class="font-light uppercase mb-2 text-end">
+      <div class="font-light text-4xl mb-2 text-end font-photograph tracking-wider">
         The fourth child of
       </div>
-      <div class="font-light uppercase mb-1 text-end">
-        Dr. Zulfi
+      <div class="font-light mb-1 text-end font-vogue">
+        Mr. Dr. Zulfi
       </div>
-      <div class="font-light uppercase text-end">
-        Erma Lismawati
+      <div class="font-light text-end font-vogue">
+        and Mrs. Erma Lismawati
       </div>
     </div>
   </div>
