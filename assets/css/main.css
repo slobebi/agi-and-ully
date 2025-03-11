@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'aperto';
-  src: url("../fonts/Aperto SCOsF Regular.otf")
+  src: url("../fonts/Aperto.otf")
 }
 
 @font-face {
@@ -18,12 +18,12 @@
 
 @font-face {
   font-family: 'highspirit';
-  src: url("../fonts/High Spirited.ttf")
+  src: url("../fonts/HighSpirited.ttf")
 }
 
 @font-face {
   font-family: 'photograph';
-  src: url("../fonts/Photograph Signature.ttf")
+  src: url("../fonts/PhotographSignature.ttf")
 }
 
 @theme {
