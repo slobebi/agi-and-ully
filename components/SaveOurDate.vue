@@ -39,7 +39,7 @@ const mapLink = 'https://maps.app.goo.gl/LfotKX4BjJeKCmjb6'
 .cover {
   background-image:
     radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
-    url('~/assets/img/halaman_save_our_date.JPG');
+    url('~/assets/img/save_our_date.JPG');
   background-size: cover;
   background-position: center center;
 }
