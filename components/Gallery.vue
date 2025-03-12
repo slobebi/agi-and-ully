@@ -31,14 +31,17 @@ const setIsOpenGallery = (value: boolean, index = 0) => {
 
 <template>
   <div class="w-full h-screen bg-black text-white cover">
-    <div ref="target" class="flex flex-col justify-start items-center h-full p-5 pt-20 animated-text gap-8"
+    <div ref="target" class="flex flex-col justify-start items-center h-full p-10 pt-20 animated-text gap-8"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl uppercase font-aperto">
         Our Gallery
       </div>
+
       <div class="w-full grid grid-cols-3 gap-4">
-        <img v-for="(url, index) in images" :key="index" :src="url" alt="" class="max-w-[112px] max-h-[168px]"
-          @click="setIsOpenGallery(true, index)">
+        <div v-for="(url, index) in images" class="justify-self-center w-full aspect-[2/3] relative max-w-[112px]">
+          <img :key="index" :src="url" alt="" class="w-full h-full object-cover absolute top-0 left-0"
+            @click="setIsOpenGallery(true, index)">
+        </div>
       </div>
     </div>
     <GalleryShowCase ref="galleryShowCase" @close="isOpenGallery = false" :is-open-gallery="isOpenGallery"
