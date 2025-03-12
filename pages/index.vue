@@ -2,12 +2,26 @@
 const router = useRoute()
 const guestName = router.query.to?.toString()
 const isAbleScroll = ref(false)
+
+const audio = ref<HTMLAudioElement | null>()
+
+onMounted(() => {
+  audio.value = new Audio(new URL('~/assets/music/background_song.mp3', import.meta.url).href)
+})
+
+const handleOpen = () => {
+  isAbleScroll.value = true
+  if (audio.value) {
+    audio.value.play()
+  }
+}
+
 </script>
 
 <template>
   <div class="snap-y snap-mandatory h-screen min-md:max-w-md max-md:w-full mx-auto overscroll-x-none"
     :class="[isAbleScroll ? 'overflow-y-scroll' : 'overflow-hidden']">
-    <Cover :guest-name="guestName" @open="isAbleScroll = true" class="snap-center snap-always" />
+    <Cover :guest-name="guestName" @open="handleOpen" class="snap-center snap-always" />
     <QS class="snap-start snap-always" />
     <Bride class="snap-end snap-always" />
     <Groom class="snap-end snap-always" />
