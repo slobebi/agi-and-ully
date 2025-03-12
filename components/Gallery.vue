@@ -31,7 +31,7 @@ const setIsOpenGallery = (value: boolean, index = 0) => {
 
 <template>
   <div class="w-full h-screen bg-black text-white cover">
-    <div ref="target" class="flex flex-col justify-start items-center h-full p-10 pt-20 animated-text gap-8"
+    <div ref="target" class="flex flex-col justify-start items-center h-full p-5 pt-20 animated-text gap-8"
       :class="{ 'animate': isInViewport }">
       <div class="font-bold text-4xl uppercase font-aperto">
         Our Gallery
