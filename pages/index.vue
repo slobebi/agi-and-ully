@@ -44,6 +44,7 @@ const handlePause = () => {
     <AttireGuide class="snap-center snap-always" />
     <RSVP class="snap-center snap-always" />
     <Gift class="snap-end snap-always" />
+    <Gallery class="snap-end snap-always" />
     <ThankYou class="snap-end snap-always" />
   </div>
   <template v-if="isAbleScroll">

@@ -24,5 +24,9 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/supabase', '@vueuse/nuxt'],
+  modules: [
+    '@nuxtjs/supabase',
+    '@vueuse/nuxt',
+    'vue3-carousel-nuxt',
+  ],
 })
