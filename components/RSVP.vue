@@ -128,13 +128,13 @@ const submitForm = async () => {
         attendance using the feature provided below,
       </div>
       <div class="w-full text-sm font-vogue">
-        <label for="name" class="block mb-1">Nama</label>
+        <label for="name" class="block mb-1">Name</label>
         <div v-if="errorForm['name']" class="text-red-700">{{ errorForm['name'] }}</div>
         <input @input="clearErrorAsInput('name')" v-model="rsvpForm.name" id="name" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2" />
       </div>
       <div class="w-full text-sm font-vogue">
-        <label for="attendance" class="block mb-1">Kehadiran</label>
+        <label for="attendance" class="block mb-1">Attendance</label>
         <div v-if="errorForm['attendance']" class="text-red-700">{{ errorForm['attendance'] }}</div>
         <select @change="clearErrorAsInput('attendance')" v-model="rsvpForm.attendance" id="attendance" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2">
@@ -144,7 +144,7 @@ const submitForm = async () => {
         </select>
       </div>
       <div class="w-full text-sm font-vogue">
-        <label for="guestCount" class="block mb-1">Jumlah Tamu</label>
+        <label for="guestCount" class="block mb-1">No of Guest (Max 2)</label>
         <div v-if="errorForm['guestCount']" class="text-red-700">{{ errorForm['guestCount'] }}</div>
         <select @change="clearErrorAsInput('guestCount')" v-model="rsvpForm.guestCount" id="guestCount" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2">
@@ -154,7 +154,7 @@ const submitForm = async () => {
         </select>
       </div>
       <div class="w-full text-sm font-vogue">
-        <label for="wish" class="block mb-1">Ucapan</label>
+        <label for="wish" class="block mb-1">Wishes</label>
         <div v-if="errorForm['wish']" class="text-red-700">{{ errorForm['wish'] }}</div>
         <textarea @input="clearErrorAsInput('wish')" v-model="rsvpForm.wish" id="wish" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2"></textarea>

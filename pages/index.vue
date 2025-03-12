@@ -2,6 +2,7 @@
 const router = useRoute()
 const guestName = router.query.to?.toString()
 const isAbleScroll = ref(false)
+const isPlayedAudio = ref(false)
 
 const audio = ref<HTMLAudioElement | null>()
 
@@ -11,8 +12,21 @@ onMounted(() => {
 
 const handleOpen = () => {
   isAbleScroll.value = true
+  handlePlay()
+}
+
+const handlePlay = () => {
   if (audio.value) {
+    isPlayedAudio.value = true
+    audio.value.loop = true
     audio.value.play()
+  }
+}
+
+const handlePause = () => {
+  if (audio.value) {
+    isPlayedAudio.value = false
+    audio.value.pause()
   }
 }
 
@@ -32,6 +46,11 @@ const handleOpen = () => {
     <Gift class="snap-end snap-always" />
     <ThankYou class="snap-end snap-always" />
   </div>
+  <template v-if="isAbleScroll">
+    <img v-if="isPlayedAudio" src="~/assets/icon/pause.svg" alt="" class="fixed bottom-7 left-7"
+      @click="handlePause()" />
+    <img v-else src="~/assets/icon/play.svg" alt="" class="fixed bottom-7 left-7" @click="handlePlay()" />
+  </template>
 </template>
 
 <style lang="css">

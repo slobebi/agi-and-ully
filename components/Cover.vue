@@ -29,8 +29,8 @@ const handleOpen = () => {
         <div class="font-light uppercase font-aperto text-lg">
           The wedding of
         </div>
-        <div class="font-bold text-3xl font-velista">
-          ULLY & ALGHI
+        <div class="font-bold text-5xl font-roundhound">
+          Ully & Alghi
         </div>
         <div class="font-light font-aperto text-lg">
           SATURDAY, APRIL 5th 2025

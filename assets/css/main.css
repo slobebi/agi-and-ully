@@ -36,6 +36,11 @@
   src: url("../fonts/Holimount.otf")
 }
 
+@font-face {
+  font-family: 'roundhound';
+  src: url("../fonts/RoundhandRegular.ttf")
+}
+
 @theme {
   --font-aperto: "aperto";
   --font-vogue: "vogue";
@@ -44,4 +49,5 @@
   --font-photograph: "photograph";
   --font-signature: "signature";
   --font-holimount: "holimount";
+  --font-roundhound: "roundhound";
 }
