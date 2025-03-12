@@ -50,7 +50,7 @@ const setIsOpenGallery = (value: boolean, index = 0) => {
 .cover {
   background-image:
     radial-gradient(transparent 0, transparent 40%, #2f3330 100%),
-    url('~/assets/img/background_gallery.JPG');
+    url('~/assets/img/background-gallery.jpg');
   background-size: cover;
   background-position: center bottom;
 }
