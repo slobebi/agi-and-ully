@@ -138,9 +138,9 @@ const submitForm = async () => {
         <div v-if="errorForm['attendance']" class="text-red-700">{{ errorForm['attendance'] }}</div>
         <select @change="clearErrorAsInput('attendance')" v-model="rsvpForm.attendance" id="attendance" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2">
-          <option selected></option>
-          <option :value="0">Hadir</option>
-          <option :value="1">Tidak Hadir</option>
+          <option selected :value="-1"></option>
+          <option :value="1">Yes</option>
+          <option :value="0">No</option>
         </select>
       </div>
       <div class="w-full text-sm font-vogue">
@@ -148,7 +148,7 @@ const submitForm = async () => {
         <div v-if="errorForm['guestCount']" class="text-red-700">{{ errorForm['guestCount'] }}</div>
         <select @change="clearErrorAsInput('guestCount')" v-model="rsvpForm.guestCount" id="guestCount" type="text"
           class="w-full bg-transparent focus:outline-none border-b-[1px] p-2">
-          <option selected></option>
+          <option selected :value="0"></option>
           <option :value="1">1</option>
           <option :value="2">2</option>
         </select>
