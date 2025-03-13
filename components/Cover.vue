@@ -29,7 +29,7 @@ const handleOpen = () => {
         <div class="font-light uppercase font-aperto text-lg">
           The wedding of
         </div>
-        <div class="font-bold text-5xl font-roundhound">
+        <div class="font-bold text-5xl font-roundhound text-center">
           Ully & Alghi
         </div>
         <div class="font-light font-aperto text-lg">
@@ -40,7 +40,7 @@ const handleOpen = () => {
         <div class="font-light font-sm font-vogue">
           To,
         </div>
-        <div v-if="guestName" class="font-bold text-3xl font-vogue">
+        <div v-if="guestName" class="font-bold text-2xl font-vogue text-center">
           {{ guestName }}
         </div>
         <div class="font-light text-sm text-center mb-5 font-vogue">
