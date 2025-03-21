@@ -37,13 +37,13 @@ const handleOpen = () => {
         </div>
       </div>
       <div v-if="!isOpened" class="flex flex-col justify-center items-center gap-3">
-        <div class="font-light font-sm font-vogue">
+        <div v-if="guestName" class="font-light font-sm font-vogue">
           To,
         </div>
         <div v-if="guestName" class="font-bold text-2xl font-vogue text-center">
           {{ guestName }}
         </div>
-        <div class="font-light text-sm text-center mb-5 font-vogue">
+        <div v-if="guestName" class="font-light text-sm text-center mb-5 font-vogue">
           We sincerely apologize if there are any errors in the writing of names or titles.
         </div>
         <button @click="handleOpen"
