@@ -6,6 +6,20 @@ onMounted(() => {
   if (targetElement.value) observeElement(targetElement.value);
 });
 
+const router = useRoute()
+const isUseDegree = computed((): boolean => {
+  const degreeQuery = router.query.degree?.toString()
+  if (degreeQuery) {
+    return degreeQuery == 'true'
+  }
+
+  return false
+})
+
+const name = computed((): string => {
+  return isUseDegree ? 'Ar. Faizatul Ulya Gunawan, S.Ars' : 'Faizatul Ulya Gunawan'
+})
+
 </script>
 <template>
   <div class="w-full h-screen bg-black text-white cover">
@@ -14,8 +28,8 @@ onMounted(() => {
       <div class="font-light uppercase mb-4 text-end font-aperto text-lg">
         The Bride
       </div>
-      <div class="font-bold text-4xl uppercase mb-4 text-end font-vogue">
-        Faizatul Ulya Gunawan
+      <div class="font-bold text-4xl mb-4 text-end font-vogue max-w-[75%]">
+        {{ name }}
       </div>
       <div class="font-light text-4xl mb-2 text-end font-photograph tracking-wide">
         The third child of
