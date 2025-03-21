@@ -16,9 +16,6 @@ const isUseDegree = computed((): boolean => {
   return false
 })
 
-const name = computed((): string => {
-  return isUseDegree ? 'Ar. Faizatul Ulya Gunawan, S.Ars' : 'Faizatul Ulya Gunawan'
-})
 
 </script>
 <template>
@@ -28,8 +25,11 @@ const name = computed((): string => {
       <div class="font-light uppercase mb-4 text-end font-aperto text-lg">
         The Bride
       </div>
-      <div class="font-bold text-4xl mb-4 text-end font-vogue max-w-[90%]">
-        {{ name }}
+      <div v-if="isUseDegree" class="font-bold text-4xl mb-4 text-end font-vogue">
+        Ar. Faizatul Ulya <br> Gunawan, S.Ars
+      </div>
+      <div v-else class="font-bold text-4xl mb-4 text-end font-vogue">
+        Faizatul Ulya <br> Gunawan
       </div>
       <div class="font-light text-4xl mb-2 text-end font-photograph tracking-wide">
         The third child of
