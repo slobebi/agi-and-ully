@@ -28,7 +28,7 @@ const name = computed((): string => {
       <div class="font-light uppercase mb-4 text-end font-aperto text-lg">
         The Bride
       </div>
-      <div class="font-bold text-4xl mb-4 text-end font-vogue max-w-[75%]">
+      <div class="font-bold text-4xl mb-4 text-end font-vogue max-w-[90%]">
         {{ name }}
       </div>
       <div class="font-light text-4xl mb-2 text-end font-photograph tracking-wide">
